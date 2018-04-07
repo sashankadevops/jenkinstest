@@ -24,7 +24,7 @@ pipeline {
                 jacoco()
             }
         }
-        stage('Sonar') {
+    /*    stage('Sonar') {
             steps {
                 echo 'Sonar Scanner'
                	//def scannerHome = tool 'SonarQube Scanner 3.0'
@@ -33,6 +33,8 @@ pipeline {
 			    }
             }
         }
+*/
+	    
         stage('Package') {
             steps {
                 echo 'Packaging'
